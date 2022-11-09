@@ -18,7 +18,7 @@
         }
     ],
     "require": {
-        "yiisoft/yii2": ">=2.0.4",
+        "rcnowak": "1.0",
         "swiftmailer/swiftmailer": "~6.0"
     },
     "require-dev": {
@@ -29,7 +29,20 @@
         {
             "type": "composer",
             "url": "https://asset-packagist.org"
+        },
+        {
+      "type": "package",
+      "package": {
+        "name": "rcnowak/yii2",
+        "version": "1.0",
+        "type": "framework",
+        "source": {
+          "url": "https://github.com/RCnowak/yii2.git",
+          "type": "git",
+          "reference": "master"
         }
+      }
+    }
     ],
     "autoload": {
         "psr-4": { "yii\\swiftmailer\\": "src" }
